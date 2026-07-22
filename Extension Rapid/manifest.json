@@ -1,0 +1,30 @@
+{
+  "name": "ResearchRapid",
+   "description" : "ResearchRapid is a chrome extension which is used to turn any webpage to an AI-powered Reseaech Assistant. This will help the user to highlight any text and instantly summarize that text or suggest the related material. this will make the research process smooth and efficient. ",
+   "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title":"Research Rapid"
+  },
+  "permission": [
+    "activeTab",
+    "storage",
+    "sidePanel",
+    "scripting"
+
+  ],
+  "side_panel":{
+    "default_path":"rapid.html"
+  },
+  "background":{
+    "service_worker":"background.js"
+  },
+  "host_permission":[
+    "http://localhost:8080/*",
+    "<all_urls>"
+  ],
+  "content_security_policy":{
+    "extension_pages": "script-src 'self': object-src 'self'"
+  }
+  
+}
