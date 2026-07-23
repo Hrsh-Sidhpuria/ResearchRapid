@@ -1,6 +1,67 @@
-<html>
-  <body>
-    <h1>Hello Extensions</h1>
-    <script src="popup.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Rapid</title>
+    <link rel="stylesheet" href="rapid.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Research Rapid</h1>
+        <p>Your AI Research Assistant</p>
+    </header>
+
+    <!-- Action Buttons -->
+    <section class="actions">
+        <button id="summBtn" class="primary-btn">
+            Summarize Page
+        </button>
+
+        <button id="suggBtn" class="secondary-btn">
+            Get Suggestions
+        </button>
+    </section>
+
+    <!-- Notes -->
+    <section class="notes-card">
+
+        <div class="notes-header">
+            <h3>Research Notes</h3>
+        </div>
+
+        <textarea
+            id="notes"
+            placeholder="Write your notes here..."
+        ></textarea>
+
+        <button id="saveNotesBtn" class="save-btn">
+            Save Notes
+        </button>
+
+    </section>
+
+    <!-- Output -->
+    <section class="results-card">
+
+        <div class="results-title">
+            <h3>AI Response</h3>
+        </div>
+
+        <div id="results" class="results">
+            AI generated summary will appear here...
+        </div>
+
+    </section>
+
+</div>
+
+<script src="rapid.js"></script>
+
+</body>
 </html>
